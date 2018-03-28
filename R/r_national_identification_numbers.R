@@ -19,8 +19,9 @@ r_national_identification_numbers <- function(n) {
    }
    b <- paste(b,resStr, sep=" ")
   }
-  #print(b)
-  return(b)
+  #print(class(b))
+  res <- strsplit(b, " ")[[1]]
+  return(res)
  }
 
 
